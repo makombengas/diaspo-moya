@@ -1,11 +1,12 @@
 import localFont from "next/font/local";
 import "../globals.css";
-import NavBar from "@/components/navBar/NavBar";
+
 
 
 
 import { getMessages } from 'next-intl/server';
 import {NextIntlClientProvider} from "next-intl"
+import Navbar from "../../components/navbar/Navbar";
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -38,7 +39,7 @@ export default async function RootLayout  ({ children, params: { locale }}) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <NextIntlClientProvider timeZone="Europe/Vienna"  locale={locale} messages={messages} >
-        <NavBar/>
+        <Navbar/>
         {children}
       
       </NextIntlClientProvider>
