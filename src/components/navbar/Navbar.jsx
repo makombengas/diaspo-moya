@@ -21,7 +21,7 @@ const Navbar = () => {
  const nav = navArray.raw('nav')
 
   const handleNavColor = () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 150) {
         setNavColor(true)
     } else {
         setNavColor(false)
@@ -33,7 +33,18 @@ const Navbar = () => {
   }, [])
  
   return (
-    <div className={`fixed  top-0 left-0 w-full z-40  flex justify-between items-center px-4 md:px-6 xl:px-8 py-2 ${navColor ? "bg-black " : "  bg-black/60 "} `} >
+    <div className="fixed w-full flex flex-col top-0 z-50">
+
+        <div className="bg-white px-4 md:px-6 xl:px-[2.5rem] h-8  w-full flex items-center justify-between ">
+            <div className="hidden md:block">
+                <p className="text-[.35rem] md:text-[1rem] ">Rue Marcel Paul, Bâtiment C1 appartement 0133150 Cenon.</p>
+            </div>
+            <LangSelect />
+        </div>
+
+
+
+    <div className={`fixed  top-8 left-0 w-full z-40  flex justify-between items-center px-4 md:px-6 xl:px-8 py-2 ${navColor ? "bg-black " : "  bg-black/60 "} `} >
         <Link href="/">
         <div className=" z-50  flex items-center gap-2">
             <Image style={{objectFit:"contain", width:"3rem", height:"3rem"}} priority  className="  md:w-[2.125rem] h-full xl:w-[3.125rem] cursor-pointer" src="/images/logo_moya.png" alt="Logo" width={50} height={50} />
@@ -51,7 +62,7 @@ const Navbar = () => {
                         <hr className={`border-none static md:absolute -bottom-[16%]  ${isActive === item.link ? " w-[25%] md:w-full h-[3px] md:h-[5px] bg-[#CDD720]" : ""}`	} />
                         <div className={`absolute h-[8rem] top-0 p-4 ${item.id === 0 || item.id === 3 || item.id === 4 || item.id === 5 ? "hidden" : "hidden  group-hover:block"}`} >
                              
-                             <div className={` bg-black z-40 flex justify-center items-center shadow-lg  md:bg-[#CDD720] rounded-sm py-1 px-2 relative h-screen w-full md:w-[12rem] md:h-auto -top-[8rem] md:top-[1.5rem] text-gray-800 ${openSubMenu ? " bg-black z-40 flex justify-center items-center ]  md:bg-[#CDD720] rounded-sm py-1 md:w-[12rem] px-2 relative h-screen w-screen  md:left-[2rem]  md:h-auto -top-4 md:top-[2.25rem] text-gray-800" : "hidden"} transition-transform ease-linear duration-300`	} >
+                             <div className={` bg-black z-40 flex justify-center items-center shadow-lg md:mr-[3rem] md:bg-[#CDD720] rounded-sm py-1 px-2 relative h-screen w-full md:w-[12rem] md:h-auto -top-[8rem] md:top-[1.5rem] text-gray-800 ${openSubMenu ? " bg-black z-40 flex justify-center items-center ]  md:bg-[#CDD720] rounded-sm py-1 md:w-[12rem] px-2 relative h-screen w-screen  md:left-[2rem]  md:h-auto -top-4 md:top-[2.25rem] text-gray-800" : "hidden"} transition-transform ease-linear duration-300`	} >
                                  <span className="absolute top-[20%] text-[#CDD720] text-[.75rem] flex items-center right-4 md:hidden" onClick={() => setOpenSubMenu(false)} >  Back {"<"} </span>
                                 
                                     <div className="  flex justify-start items-center ">
@@ -69,7 +80,7 @@ const Navbar = () => {
                 ))
             }
         </div>
-        <LangSelect />
+       
 
 
         <div className="w-[1.5rem] z-50 flex flex-col gap-1 relative md:hidden" onClick={() => setOpenNav(!openNav)} >
@@ -78,6 +89,7 @@ const Navbar = () => {
             <hr className={` border-none w-full h-[2px] bg-gray-100 ${openNav ? "transition-rotate ease-linear duration-300  absolute -rotate-45 border-none w-full h-[2px] bg-black" : "transition-rotate ease-linear duration-300 "} `} />
         </div>
         
+    </div>
     </div>
   )
 }

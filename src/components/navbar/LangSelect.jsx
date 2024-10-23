@@ -1,7 +1,7 @@
 "use client"
 
 import { usePathname, useRouter } from "@/i18n/routing";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState, useTransition } from "react";
@@ -52,25 +52,30 @@ const LangSelect = () => {
         
         
     }
-
+ const langChange = useTranslations('LocaleSwitcher')
 
   return (
-    <div className="group">
-        <div className=" absolute top-5  items-center  md:top-2 right-0 mr-16 md:mr-8 flex flex-col gap-2">
-       {openFlag? <div className="">
+    <div className="group cursor-pointer z-50 ">
+        <div className="bg-white px-3 py-0 rounded-md absolute top-1   items-center right-0   md:right-5 flex flex-col ">
+       {openFlag? <div className=" ">
         {
             changeFlag.map((flag) => (
                 <div className={` opacity-50 border-2 border-[#CDD720] ${flag.id  ? "opacity-50 border-2 border-[#CDD720] " : ""} `} key={flag.id} disabled={isPending} onClick={() => changeLocale(flag.id)}><Image className="opacity-50 border-2 border-[#CDD720]" src={flag.image} width={35} height={35} alt={flag.name} /></div>  // <div className=""></div>
             ))
         }
-       </div> : <FaLanguage className="cursor-pointer text-white text-2xl md:text-5xl" />}
-            {
+       </div> : <div className="flex items-center gap-3">
+          <span className="  text-[.65rem] md:text-[1rem] ">  {langChange('label')}</span>
+       <FaLanguage className="cursor-pointer text-black-500 text-2xl md:text-2xl" />
+       </div> }
+           <div className="flex items-center gap-4">
+           {
                 flags.map((flag) => (
                     <div key={flag.id} className={` hidden group-hover:flex justify-center cursor-pointer  items-center  ${locale === flag.flag  ? "scale-110 " : "opacity-50 "} `} disabled={isPending} onClick={() => changeLocale(flag.id)}>
-                        <Image className=" w-4 h-4  md:w-10 md:h-10" src={flag.image} width={35} height={35} alt={flag.name} />
+                        <Image className=" w-6 h-6  md:w-10 md:h-10" src={flag.image} width={35} height={35} alt={flag.name} />
                     </div>
                 ))
             }
+           </div>
         </div>
     </div>
   )
