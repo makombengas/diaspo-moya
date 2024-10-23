@@ -3,6 +3,8 @@
 ![Website Preview](public/images/charity_hero.png)
 
 A modern, internationalized website for the diaspora community, built with Next.js, focusing on connectivity and cultural engagement.
+Association of sons and daughters of the village Moya
+
 
 ## ✨ Features
 
