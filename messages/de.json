@@ -1,0 +1,163 @@
+{
+    "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unbekannt}}"
+  },
+  "Manifest": {
+    "description": "",
+    "name": ""
+  },
+  
+  "Nav":{
+    "nav": [
+      {
+        "id": 0,
+        "title": "Startseite",
+        "link": "/",
+        "navArray": [
+          {
+            "id": 1,
+            "title": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Über uns",
+        "link": "/about-us",
+        "navArray": [
+          {
+            "id": 1,
+            "title": "Mitglied werden",
+            "link": "/become-a-member"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Geschichte von Moya",
+        "link": "/story-of-moya",
+        "navArray": [
+          {
+            "id": 1,
+            "title": "Präsentation",
+            "link": "/presentation"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Unsere Projekte",
+        "link": "/our-projects",
+        "navArray": [
+          {
+            "id": 1,
+            "title": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Kontaktieren Sie uns",
+        "link": "/contact-us",
+        "navArray": [
+          {
+            "id": 1,
+            "title": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Spenden",
+        "link": "/donate",
+        "navArray": [
+          {
+            "id": 1,
+            "title": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  "Carousel":{
+    "carousel": [
+      {
+        "id": 0,
+        "title": "Wer sind wir",
+        "subtitle": "Vereinigung der Söhne und Töchter des Dorfes Moya",
+        "link": "/about-us",
+        "btn": "Mehr erfahren",
+        "image": "/images/carousel-1.jpg"
+      },
+      {
+        "id": 1,
+        "title": "Unsere Projekte",
+        "subtitle": "Rehabilitation des Gesundheitszentrums von Moya",
+        "link": "/our-projects",
+        "btn": "Mehr lesen",
+        "image": "/images/carousel-2.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Geschichte von Moya",
+        "subtitle": "Moya, eine säkulare Einwanderung",
+        "link": "/history-of-moya",
+        "btn": "Mehr erfahren",
+        "image": "/images/carousel-3.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Unser Ziel",
+        "subtitle": "Moya zum Kreuzpunkt des nord-makombe machen",
+        "link": "/donate",
+        "btn": "Spenden",
+        "image": "/images/carousel-4.jpg"
+      }
+    ]
+  },
+
+  "TopBanner": {
+    "topBanner": {
+      "title": "Unterstützen Sie die Sache",
+    "subtitle": "Unsere verschiedenen Projekte für den Kanton MOYA",
+    "pourcentage": "20%",
+    "btn": "Spenden Sie jetzt",
+    "link": "our-projets",
+    "whyMoya": "Warum Moya?",
+    "whySubtitle": "Wir möchten Moya zum Knotenpunkt des Nord-Makombe machen.",
+    "whyBtn": "Mehr erfahren",
+    "causeArray": [
+      {
+        "id": 1,
+        "title": "Gesundheitsprojekte"
+      },
+      {
+        "id": 2,
+        "title": "Stipendien für Schüler"
+      },
+      {
+        "id": 3,
+        "title": "Wasser-versorgungsprojekt für den Kanton MOYA"
+      },
+      {
+        "id": 4,
+        "title": "Sammeln und Verteilen von wichtigen Materialien für die Einwohner"
+      },
+      {
+        "id": 5,
+        "title": "Erstellung von Kartografien (Relief, GPS-Position, Flächen) des Kantons"
+      },
+      {
+        "id": 6,
+        "title": "Erstellung/Ausstattung von Sportplätzen (Handball, Volleyball, Fußball) + gesammelte Ausrüstung"
+      }
+    ]
+    }
+  }
+  
+}

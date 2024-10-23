@@ -1,0 +1,163 @@
+{
+    "LocaleLayout": {
+        "title": "next-intl example"
+      },
+      "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unknown}}"
+      },
+      "Manifest": {
+        "name": "next-intl example"
+      },
+
+    "Nav":{
+        "nav": [
+            {
+              "id": 0,
+              "title": "Home",
+              "link": "/",
+              "navArray": [
+                {
+                  "id": 1,
+                  "title": "",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "title": "About Us",
+              "link": "/about-us",
+              "navArray": [
+                {
+                  "id": 1,
+                  "title": "Become a Member",
+                  "link": "/become-a-member"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Story of Moya",
+              "link": "/story-of-moya",
+              "navArray": [
+                {
+                  "id": 1,
+                  "title": "Presentation",
+                  "link": "/presentation"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Our Projects",
+              "link": "/our-projects",
+              "navArray": [
+                {
+                  "id": 1,
+                  "title": "",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "title": "Contact Us",
+              "link": "/contact-us",
+              "navArray": [
+                {
+                  "id": 1,
+                  "title": "",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "title": "Make a Donation",
+              "link": "/donate",
+              "navArray": [
+                {
+                  "id": 1,
+                  "title": "",
+                  "link": ""
+                }
+              ]
+            }
+          ]
+    },
+    "Carousel":{
+        "carousel": [
+          {
+            "id": 0,
+            "title": "Who are we",
+            "subtitle": "Association of sons and daughters of the village Moya",
+            "link": "/about-us",
+            "btn": "Learn more",
+            "image": "/images/carousel-1.jpg"
+          },
+          {
+            "id": 1,
+            "title": "Our projects",
+            "subtitle": "Rehabilitation of the Moya health center",
+            "link": "/our-projects",
+            "btn": "Read more",
+            "image": "/images/carousel-2.jpg"
+          },
+          {
+            "id": 2,
+            "title": "History of Moya",
+            "subtitle": "Moya, a secular immigration",
+            "link": "/history-of-moya",
+            "btn": "Learn more",
+            "image": "/images/carousel-3.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Our objective",
+            "subtitle": "Make Moya the crossroads of the north-makombe",
+            "link": "/donate",
+            "btn": "Make a donation",
+            "image": "/images/carousel-4.jpg"
+          }
+        ]
+      },
+  "TopBanner": {
+   "topBanner":{
+    "title": "Support the Cause",
+    "subtitle": "Our Various Projects for the MOYA Canton",
+    "pourcentage": "20%",
+    "btn": "Make a Donation Now",
+    "link": "our-projets",
+    "whyMoya": "Why Moya?",
+    "whySubtitle": "We want to make Moya the hub of North Makombe.",
+    "whyBtn": "read more",
+    "causeArray": [
+      {
+        "id": 1,
+        "title": "Health Projects"
+      },
+      {
+        "id": 2,
+        "title": "Scholarships for Students"
+      },
+      {
+        "id": 3,
+        "title": "Water Supply Project for the MOYA Canton"
+      },
+      {
+        "id": 4,
+        "title": "Collection and Distribution of Essential Materials for Residents"
+      },
+      {
+        "id": 5,
+        "title": "Development of Cartography (Relief, GPS Position, Surfaces) of the Canton"
+      },
+      {
+        "id": 6,
+        "title": "Creation/Development of Sports Fields (Handball, Volleyball, Football) + Recovered Equipment"
+      }
+    ]
+   }
+  }
+}

@@ -1,0 +1,164 @@
+{
+    "LocaleLayout": {
+        "title": "next-intl example"
+      },
+      "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unknown}}"
+      },
+      "Manifest": {
+        "name": "next-intl example"
+      },
+"Nav":{
+  
+  "nav": [
+    {
+      "id": 0,
+      "title": "accueil",
+      "link": "/",
+      "navArray": [
+        {
+          "id": 1,
+          "title": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "qui sommes-nous",
+      "link": "/about-us",
+      "navArray": [
+        {
+          "id": 1,
+          "title": "Devenir membre",
+          "link": "/become-a-member"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Histoire de moya",
+      "link": "/story-of-moya",
+      "navArray": [
+        {
+          "id": 1,
+          "title": "Présentation",
+          "link": "/presentation"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Nos projets",
+      "link": "/our-projets",
+      "navArray": [
+        {
+          "id": 1,
+          "title": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Nous contacter",
+      "link": "/contact-us",
+      "navArray": [
+        {
+          "id": 1,
+          "title": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Faire un don",
+      "link": "/donate",
+      "navArray": [
+        {
+          "id": 1,
+          "title": "",
+          "link": ""
+        }
+      ]
+    }
+  ]
+},
+"Carousel":{
+  "carousel": [
+    {
+      "id": 0,
+      "title": "Qui sommes nous",
+      "subtitle": "L'association des fils et fille du village Moya",
+      "link": "/about-us",
+      "btn": "En savoir plus",
+      "image": "/images/carousel-1.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Nos projets",
+      "subtitle": "Réhabilitation du centre de santé de Moya",
+      "link": "/our-projects",
+      "btn": "Lire la suite",
+      "image": "/images/carousel-2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Histoire de Moya",
+      "subtitle": "MOYA une immigration seculaire",
+      "link": "/history-of-moya",
+      "btn": "En savoir plus",
+      "image": "/images/carousel-3.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Notre objectif",
+      "subtitle": "faire de Moya le carrefour du nord-makombe",
+      "link": "/donate",
+      "btn": "Faire un don",
+      "image": "/images/carousel-4.jpg"
+    }
+  ]
+},
+"TopBanner":{
+  "topBanner":{
+    "title": "Aidons la cause",
+  "subtitle": "Nos différents Projets pour le Canton MOYA",
+  "pourcentage":"20%",
+  "btn":"Faites un don maintenant",
+  "link":"our-projets",
+  "whyMoya": "Pourquoi Moya?",
+  "whySubtitle": "Nous voulons faire de moya le carrefour du nord-makombe.",
+  "whyBtn": "Lire plus",
+  "causeArray": [
+    {
+      "id": 1,
+      "title": "Projets Santé"
+    },
+    {
+      "id": 2,
+      "title": "Bourses aux élèves"
+    },
+    {
+      "id": 3,
+      "title": "Projet d’adduction d’eau pour le Canton MOYA"
+    },
+    {
+      "id": 4,
+      "title": "Collecte et distribution de matériels essentiels pour les habitants"
+    },
+    {
+      "id": 5,
+      "title": "Elaboration de la cartographie (relief, position GPS, superficies) du Canton"
+    },
+    {
+      "id": 6,
+      "title": "Création/aménagement. terrains sport (Hand, Volley, Foot) + matériel récupéré"
+    }   
+  ]
+  }
+}
+}
+

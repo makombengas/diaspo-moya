@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌟 Diaspo Moya
 
-## Getting Started
+![Website Preview](public/images/charity_hero.png)
 
-First, run the development server:
+A modern, internationalized website for the diaspora community, built with Next.js, focusing on connectivity and cultural engagement.
 
+## ✨ Features
+
+- 🌐 Multi-language support with next-intl
+- 🎨 Responsive design with Tailwind CSS
+- ✨ Smooth @midudev/tailwind-animations
+- 📱 Mobile-first approach
+- ♿ WCAG 2.1 compliant accessibility
+- 🤝 Community connection features
+- 📊 Cultural events calendar
+
+## 🚀 Tech Stack
+
+- **Frontend Framework:** Next.js 14
+- **Styling:** Tailwind CSS
+- **Animations:** @midudev/tailwind-animations
+- **Icons:** React Icons
+- **Internationalization:** next-intl
+- **Language:** JavaScript
+
+## 📥 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/makombengas/diaspo-moya.git
+cd diaspo_moya
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Project Structure
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+diaspo-moya/
+|──src/
+│   ├── app/ 
+|   |   ├── [locale]/   
+│   │   ├── page.js
+│   │   └── layout.js 
+|   ├── components/
+│   |    ├── carousel/
+│   |    ├── navbar
+|   |    ├── topBanner
+│   └── notFound.jsx/
+├── i18n/
+│   ├── request.js/
+│   └── routing.js/
+├────
+│   ├── config.js/
+│   └── Middleware.js/
+├── styles/
+│   └── globals.css
+└── public/
+|   └── images/
+└── messages/
+    ├── de.json/
+    └── en.json/    
+    └── fr.json/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
 
-## Learn More
+## 🔧 Configuration
 
-To learn more about Next.js, take a look at the following resources:
+### Tailwind Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```javascript
+// tailwind.config.js
+module.exports = {
+  content: [
+    './app/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Add your custom colors here
+      },
+      fontFamily: {
+        // Add your custom fonts here
+      },
+    },
+  },
+  plugins: [],
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Internationalization Setup
 
-## Deploy on Vercel
+```javascript
+// middleware.js
+import createMiddleware from 'next-intl/middleware';
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+export default createMiddleware({
+  locales: ['en', 'es', 'fr'],
+  defaultLocale: 'en'
+});
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+export const config = {
+  matcher: ['/((?!api|_next|.*\\..*).*)']
+};
+```
+
+
+## 📄 IMAGE License
+
+This project is licensed under the MIT License - see the [LICENSE]([https://unsplash.com/]) file for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE]([https://diaspomoya.org/]) file for details.
+
